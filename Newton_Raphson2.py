@@ -15,7 +15,7 @@ num_interacoes_max = 100
 #Funcao que realiza o calculo de newton raphson
 def newton_raphson(expressao,xi,):
     derivada_xi = sp.diff(expressao)
-    num_interacoes = 1
+    num_interacoes = 0
 
     while num_interacoes <= num_interacoes_max:
         f_xi = expressao.subs(x,xi).evalf() #subs calcula o valor de uma funcao dado o ponto e evalf converte para float
