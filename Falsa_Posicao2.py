@@ -15,7 +15,7 @@ def calcxatual(a,fa,b,fb):
 
 N_interacoes = 100
 
-erro = 0.00000001
+erro = 0.00001
 
 
 xanteiror = 0
