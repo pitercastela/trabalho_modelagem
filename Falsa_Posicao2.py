@@ -3,7 +3,7 @@ from sympy.plotting import *
 
 #função
 def fx(x):
-    return ((x**3) - (9*(x**2)) + 3)
+    return (x - (x)*(sp.log(x).evalf())) #ou ((x**3) - (9*(x**2)) + 3)
 
 #calculo do erro
 def erro_calc(xat ,xant):
@@ -55,4 +55,4 @@ def Falsa_Posicao(valor1, valor2):
         xanteiror = xatual
         i += 1
 
-Falsa_Posicao(0, 1)
+Falsa_Posicao(2, 3) #ou Falsa_Posicao(0, 1)
